@@ -4,18 +4,26 @@ $border-color: #dbdbdb;
 
 body, button, input, select, textarea {
     font-family: $family-serif;
-	font-size: 1.2rem;
+	font-size: 120%;
 }
 
+.content h2 {
+	font-size: 140%;
+	font-weight: 500;
+}
+
+.content h2 {
+	font-size: 130%;
+	font-weight: 500;
+}
+
+div.figure > p.caption {
+	display: none;
+}
 
 a.tag.article-tag {
     font-size: 0.9rem;
     text-decoration: none;
-}
-
-img.caption2 {
-	//float: left;
-	//display: block !important;
 }
 
 @media screen and (min-width: 1024px) {
