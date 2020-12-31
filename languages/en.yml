@@ -17,6 +17,8 @@ article:
   words: 'words'
   comments: 'Comments'
   contents: 'Contents'
+  next_article: 'Older post'
+  prev_article: 'Newer post'
 search:
   hint: 'Type something...'
 insight:
