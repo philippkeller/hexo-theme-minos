@@ -46,13 +46,13 @@
     <% if (!index && (post.prev || post.next)) { %>
     <div class="columns is-mobile is-multiline article-nav">
         <span class="column is-12-mobile is-half-desktop <%= !post.prev ? 'is-hidden-mobile' : '' %> article-nav-prev">
-            <% if (post.prev){ %>
+            <% if (post.next){ %>
             Älterer Beitrag:
             <a href="<%- url_for(post.next.path) %>"><%= post.next.title %></a>
             <% } %>
         </span>
         <span class="column is-12-mobile is-half-desktop <%= !post.next ? 'is-hidden-mobile' : '' %> article-nav-next">
-            <% if (post.next){ %>
+            <% if (post.prev){ %>
             Neuerer Beitrag:
             <a href="<%- url_for(post.prev.path) %>"><%= post.prev.title %></a>
             <% } %>
