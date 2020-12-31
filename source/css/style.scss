@@ -60,12 +60,25 @@ a.tag.article-tag {
     }
 }
 
-.article {
-    & + .article {
+.overview {
+  .article {
+    height: 30em;    
+    overflow: hidden;
+    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.2) 95%, transparent);
+  }
+
+  .article-wrapper {
+    cursor: pointer;
+  }
+
+  .article-wrapper:not(:first-child) {
         padding-top: 2rem;
         border-top: 1px solid $border-color;
-    }
+  }
+}
 
+.article {
     .article-title a,
     .article-meta a {
         color: inherit;

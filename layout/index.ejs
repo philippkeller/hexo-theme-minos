@@ -1,7 +1,9 @@
-<section class="section">
+<section class="section overview">
     <div class="container">
     <% page.posts.each(function(post){ %>
-        <%- partial('common/article', { post, index: true }) %>
+        <div onclick="location.href='<%- url_for(post.link ? post.link : post.path) %>';" class="article-wrapper">
+          <%- partial('common/article', { post, index: true }) %>
+        </div>
     <% }); %>
     <% if (page.total > 1) { %>
         <%- partial('common/paginator') %>
