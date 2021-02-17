@@ -17,6 +17,10 @@ body, button, input, select, textarea {
 	font-weight: 500;
 }
 
+span.caps {
+  font-variant: small-caps;
+}
+
 div.figure > p.caption {
 	display: none;
 }
@@ -118,6 +122,10 @@ a.tag.article-tag {
                 right: 100%;
             }
         }
+
+    }
+    .article-entry.author {
+        margin-bottom: 1rem;
     }
 
     .article-more-link a {

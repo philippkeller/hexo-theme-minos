@@ -26,6 +26,12 @@
         </span>
         <% } %>
     </div>
+    <% if (!index && post.author) { %>
+        <div class="article-entry is-size-6-mobile author">
+            <strong>Beitrag von <%= post.author %></strong>
+        </div>
+    <% } %>
+    <div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
